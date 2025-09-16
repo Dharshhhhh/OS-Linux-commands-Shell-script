@@ -505,15 +505,13 @@ else
 echo "$val1 is less than $val2"
 fi
 ```
-##OUTPUT
-![Alt text](img/sen33.png)
 
 
 chmod 755 strcomp.sh
  
 ./strcomp.sh 
 ## OUTPUT
-
+![Alt text](img/sen33.png)
 
 # check file ownership
 cat < psswdperm.sh 
@@ -725,6 +723,7 @@ fi
 $ chmod 755 ifcompound.sh
 $ ./ifcompound.sh 
 ## OUTPUT
+![Alt text](img/vim7.png)
 
 # using the case command
 cat >casecheck.sh 
@@ -744,8 +743,11 @@ esac
 $ chmod 755 casecheck.sh 
  
 $ ./casecheck.sh 
+
+#OUTPUT
+![Alt text](img/case.png)
  
-cat > whiletest
+cat > whiletest.sh
 ```bash
 #!/bin/bash
 #while command test
@@ -759,7 +761,9 @@ done
 $ chmod 755 whiletest.sh
  
 $ ./whiletest.sh
- 
+
+ #OUTPUT
+ ![Alt text](img/vim7.png)
  
 cat untiltest.sh 
 ```bash
@@ -772,7 +776,8 @@ var1=$[ $var1 - 25 ]
 done
 ``` 
 $ chmod 755 untiltest.sh
- 
+ #OUTPUT
+ ![Alt text](img/vim8.png)
  
  
 cat forin1.sh 
@@ -836,6 +841,8 @@ done
 $ chmod 755 forin1.sh
 
 ## OUTPUT
+![Alt text](img/for.png)
+
 cat forinfile.sh 
 ```bash
 #!/bin/bash
@@ -857,7 +864,7 @@ Bhadrachalam
 Khammam
 
 ## OUTPUT
-
+![Alt text](img/for3.png)
 
 cat forctype.sh 
 ```bash
@@ -871,6 +878,7 @@ done
 $ chmod 755 forctype.sh
 $ ./forctype.sh 
 ## OUTPUT
+![Alt text](img/for4.png)
 
 cat forctype1.sh 
 ```bash
@@ -884,6 +892,7 @@ done
 $ chmod 755 forctype.sh
 $ ./forctype1.sh 
 ## OUTPUT
+![Alt text](img/for5.png)
 
 cat fornested1.sh 
 ```bash
@@ -902,7 +911,7 @@ $ chmod 755 fornested1.sh
  
 $ ./fornested1.sh 
  ## OUTPUT
-
+![Alt text](img/for6.png)
  
 cat forbreak.sh 
 ```bash
@@ -919,9 +928,9 @@ done
 echo "The for loop is completed“
 ```
 ## OUTPUT
+![Alt text](img/for7.png)
 
 $ chmod 755 forbreak.sh
- 
 $ ./forbreak.sh 
  
 cat forbreak.sh 
@@ -944,7 +953,8 @@ $ chmod 755 forcontinue.sh
  
 $ ./forcontinue.sh 
 ## OUTPUT
- 
+ ![Alt text](img/for8.png)
+
 cat exread.sh 
 ```bash
 #!/bin/bash
@@ -958,7 +968,7 @@ $ chmod 755 exread.sh
  
 $ ./exread.sh 
 ## OUTPUT
-
+![Alt text](img/for9.png)
 
  cat exread1.sh
 ```bash
@@ -968,12 +978,13 @@ read -p "Enter your name: " name
 echo "Hello $name, welcome to my program. “
 ``` 
 $ chmod 755 exread1.sh 
+$ ./exread1.sh 
 
 ## OUTPUT
+![Alt text](img/for10.png)
 
 
 
-$ ./exread1.sh 
  
 cat funcex.sh
 ```bash
@@ -992,10 +1003,10 @@ fi
 ```
 ## OUTPUT
  ./funcex.sh 
-
+![Alt text](img/for11.png)
  
  ./funcex.sh 1 2
-
+![Alt text](img/for12.png)
  
 cat argshift.sh
 ```bash
@@ -1006,9 +1017,11 @@ cat argshift.sh
 done
 ```
 $ chmod 777 argshift.sh
+$ ./argshift.sh 1 2 3
 
 ## OUTPUT
-$ ./argshift.sh 1 2 3
+![Alt text](img/for13.png)
+
  
  cat argshift1.sh
 ```bash
@@ -1024,8 +1037,10 @@ for (( i=0;i<$ELEMENTS;i++)); do
 done
 ```
 $ chmod 777 argshift.sh
-## OUTPUT
 $ ./argshift.sh 1 2 3
+
+## OUTPUT
+![Alt text](img/for14.png)
  
 cat argshift.sh
 ```bash
@@ -1037,8 +1052,9 @@ while (( "$#" )); do
 done
 set +x
 ```
+./argshift.sh 1 2 3
 ## OUTPUT
- ./argshift.sh 1 2 3
+ ![Alt text](img/for14.png)
  
  
 cat > nc.awk
@@ -1070,7 +1086,8 @@ ubcdfghj
 ```
 awk -f nc.awk data.dat
 ## OUTPUT 
- 
+ ![Alt text](img/vim9.png)
+
 cat > palindrome.sh
 ```bash
 #num=545
@@ -1097,7 +1114,7 @@ else
 fi
 ```
 ## OUTPUT 
-
+![Alt text](img/pal.png)
 
 # RESULT:
 The Commands are executed successfully.
