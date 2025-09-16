@@ -42,24 +42,25 @@ s.n. dasgupta
 ### Display the content of the files
 cat < file1
 ## OUTPUT
-
+![Alt text](img/cat1.png)
 
 
 cat < file2
 ## OUTPUT
-
+![Alt text](img/cat2.png)
 
 # Comparing Files
 cmp file1 file2
 ## OUTPUT
+![Alt text](img/cmp.png)
  
 comm file1 file2
  ## OUTPUT
-
+![Alt text](img/comm.png)
  
 diff file1 file2
 ## OUTPUT
-
+![Alt text](img/diff.png)
 
 #Filters
 
@@ -82,18 +83,18 @@ cat > file22
 
 cut -c1-3 file11
 ## OUTPUT
-
+![Alt text](img/cut1.png)
 
 
 
 cut -d "|" -f 1 file22
 ## OUTPUT
-
+![Alt text](img/cut2.png)
 
 
 cut -d "|" -f 2 file22
 ## OUTPUT
-
+![Alt text](img/cut3.png)
 
 cat < newfile 
 ```
@@ -107,40 +108,40 @@ hello world
  
 grep Hello newfile 
 ## OUTPUT
-
+![Alt text](img/grep1.png)
 
 
 grep hello newfile 
 ## OUTPUT
-
+![Alt text](img/grep2.png)
 
 
 
 grep -v hello newfile 
 ## OUTPUT
-
+![Alt text](img/grep3.png)
 
 
 cat newfile | grep -i "hello"
 ## OUTPUT
-
+![Alt text](img/grep4.png)
 
 
 
 cat newfile | grep -i -c "hello"
 ## OUTPUT
-
+![Alt text](img/grep5.png)
 
 
 
 grep -R ubuntu /etc
 ## OUTPUT
-
+![Alt text](img/grep6.png)
 
 
 grep -w -n world newfile   
 ## OUTPUT
-
+![Alt text](img/grep7.png)
 
 cat < newfile 
 ```
@@ -163,60 +164,60 @@ Linux is best in this World
  ```
 egrep -w 'Hello|hello' newfile 
 ## OUTPUT
-
+![Alt text](img/grep8.png)
 
 
 egrep -w '(H|h)ello' newfile 
 ## OUTPUT
-
+![Alt text](img/grep9.png)
 
 
 egrep -w '(H|h)ell[a-z]' newfile 
 ## OUTPUT
-
+![Alt text](img/grep10.png)
 
 
 
 egrep '(^hello)' newfile 
 ## OUTPUT
-
+![Alt text](img/grep11.png)
 
 
 egrep '(world$)' newfile 
 ## OUTPUT
-
+![Alt text](img/grep12.png)
 
 
 egrep '(World$)' newfile 
 ## OUTPUT
-
+![Alt text](img/grep13.png)
 
 egrep '((W|w)orld$)' newfile 
 ## OUTPUT
-
+![Alt text](img/grep14.png)
 
 
 egrep '[1-9]' newfile 
 ## OUTPUT
-
+![Alt text](img/grep15.png)
 
 
 egrep 'Linux.*world' newfile 
 ## OUTPUT
-
+![Alt text](img/grep16.png)
 
 egrep 'Linux.*World' newfile 
 ## OUTPUT
-
+![Alt text](img/grep17.png)
 
 egrep l{2} newfile
 ## OUTPUT
-
+![Alt text](img/grep18.png)
 
 
 egrep 's{1,2}' newfile
 ## OUTPUT 
-
+![Alt text](img/grep19.png)
 
 cat > file23
 ```
@@ -234,80 +235,81 @@ cat > file23
 
 sed -n -e '3p' file23
 ## OUTPUT
-
+![Alt text](img/sen1.png)
 
 
 sed -n -e '$p' file23
 ## OUTPUT
-
+![Alt text](img/sen2.png)
 
 
 sed  -e 's/Ram/Sita/' file23
 ## OUTPUT
-
+![Alt text](img/sen3.png)
 
 
 sed  -e '2s/Ram/Sita/' file23
 ## OUTPUT
-
+![Alt text](img/sen4.png)
 
 
 sed  '/tom/s/5000/6000/' file23
 ## OUTPUT
-
+![Alt text](img/sen5.png)
 
 
 sed -n -e '1,5p' file23
 ## OUTPUT
-
+![Alt text](img/sen6.png)
 
 
 sed -n -e '2,/Joe/p' file23
 ## OUTPUT
-
+![Alt text](img/sen7.png)
 
 
 
 sed -n -e '/tom/,/Joe/p' file23
 ## OUTPUT
-
+![Alt text](img/sen8.png)
 
 
 seq 10 
 ## OUTPUT
-
+![Alt text](img/sen10.png)
 
 
 seq 10 | sed -n '4,6p'
 ## OUTPUT
-
+![Alt text](img/sen11.png)
 
 
 seq 10 | sed -n '2,~4p'
 ## OUTPUT
-
+![Alt text](img/sen12.png)
 
 
 seq 3 | sed '2a hello'
 ## OUTPUT
-
+![Alt text](img/sen13.png)
 
 
 seq 2 | sed '2i hello'
 ## OUTPUT
-
+![Alt text](img/sen14.png)
 
 seq 10 | sed '2,9c hello'
 ## OUTPUT
-
+![Alt text](img/sen15.png)
 
 sed -n '2,4{s/^/$/;p}' file23
 ## OUTPUT
-
+![Alt text](img/sen17.png)
 
 
 sed -n '2,4{s/$/*/;p}' file23
-
+## OUTPUT
+![Alt text](img/sen18.png)
 
 #Sorting File content
 cat > file21
@@ -320,7 +322,7 @@ cat > file21
 ``` 
 sort file21
 ## OUTPUT
-
+![Alt text](img/sen19.png)
 
 cat > file22
 ```
@@ -333,14 +335,14 @@ cat > file22
 ``` 
 uniq file22
 ## OUTPUT
-
+![Alt text](img/sen20.png)
 
 
 #Using tr command
 
 cat file23 | tr [:lower:] [:upper:]
  ## OUTPUT
-
+![Alt text](img/sen21.png)
 cat < urllist.txt
 ```
 www. yahoo. com
@@ -356,18 +358,18 @@ www. mrcet.... com
  ```
 cat urllist.txt | tr -d ' '
  ## OUTPUT
-
+![Alt text](img/sen22.png)
 
  
 cat urllist.txt | tr -d ' ' | tr -s '.'
 ## OUTPUT
-
+![Alt text](img/sen23.png)
 
 
 #Backup commands
 tar -cvf backup.tar *
 ## OUTPUT
-
+![Alt text](img/sen24.png)
 
 mkdir backupdir
  
@@ -377,19 +379,21 @@ cd backupdir
  
 tar -tvf backup.tar
 ## OUTPUT
-
+![Alt text](img/sen25.png)
 
 tar -xvf backup.tar
 ## OUTPUT
+![Alt text](img/sen26.png)
 
 gzip backup.tar
 
 ls .gz
 ## OUTPUT
+![Alt text](img/sen27.png)
  
 gunzip backup.tar.gz
 ## OUTPUT
-
+![Alt text](img/sen27.png)
  
 # Shell Script
 ```
@@ -411,7 +415,7 @@ stop
 
 cat herecheck.txt
 ## OUTPUT
-
+![Alt text](img/sen28.png)
 
 cat < scriptest.sh 
 ```bash
@@ -449,24 +453,28 @@ chmod 777 scriptest.sh
 ./scriptest.sh 1 2 3
 
 ## OUTPUT
-
+![Alt text](img/sen29.png)
  
 ls file1
 ## OUTPUT
+![Alt text](img/sen30.png)
 
 echo $?
 ## OUTPUT 
+![Alt text](img/sen31.png)
+
 ./one
 bash: ./one: Permission denied
  
 echo $?
 ## OUTPUT 
- 
+ ![Alt text](img/sen31.png)
+
 abcd
  
 echo $?
  ## OUTPUT
-
+![Alt text](img/sen32.png)
 
  
 # mis-using string comparisons
@@ -498,7 +506,7 @@ echo "$val1 is less than $val2"
 fi
 ```
 ##OUTPUT
-
+![Alt text](img/sen33.png)
 
 
 chmod 755 strcomp.sh
@@ -532,7 +540,7 @@ fi
  ```
 ./psswdperm.sh
 ## OUTPUT
-
+![Alt text](img/vim2.png)
 # check if with file location
 cat>ifnested.sh 
 ```bash
@@ -578,7 +586,7 @@ fi
 
 ./ifnested.sh 
 ## OUTPUT
-
+![Alt text](img/vim3.png)
 
 
 # using numeric test comparisons
@@ -622,6 +630,7 @@ $ chmod 755 iftest.sh
  
 $ ./iftest.sh 
 ##OUTPUT
+![Alt text](img/vim4.png)
 
 # check if a file
 cat > ifnested.sh 
@@ -671,6 +680,7 @@ $ chmod 755 ifnested.sh
  
 $ ./ifnested.sh 
 ##OUTPUT
+![Alt text](img/vim1.png)
 
 # looking for a possible value using elif
 cat elifcheck.sh 
@@ -699,7 +709,7 @@ $ chmod 755 elifcheck.sh
  
 $ ./elifcheck.sh 
 ## OUTPUT
-
+![Alt text](img/vim5.png)
 
 # testing compound comparisons
 cat> ifcompound.sh 
